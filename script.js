@@ -100,11 +100,3 @@ function onDelete(td) {  // To delete data in Table
         resetForm();
     }
 }
-
-function onDelete(td) { // Function to delete Table Data
-    if (confirm('Are you want to delete this record ???')) {
-        row = td.parentElement.parentElement;
-        document.getElementById('emp-list').deleteRow(row.rowIndex);
-        resetForm();
-    }
-}
